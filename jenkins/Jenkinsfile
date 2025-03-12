@@ -12,4 +12,13 @@ pipeline {
             }
         }
     }
+    stages {
+        stage('Run Spring Boot') {
+            steps {
+                sh '''
+                    nohup java -jar your-application.jar &
+                    '''
+            }
+        }
+    }
 }
