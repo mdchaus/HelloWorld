@@ -63,6 +63,13 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Run Spring Boot') {
+            steps {
+                sh '''
+                    nohup java -jar HelloWorld-0.0.1-SNAPSHOT.jar &
+                    '''
+            }
+        }
     }
 
     post {
