@@ -29,7 +29,7 @@
 		<!-- Instruct spring boot not to use the inbuilt Tomcat server -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>test</scope>
         </dependency>
         
